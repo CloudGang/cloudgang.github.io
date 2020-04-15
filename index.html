@@ -47,9 +47,6 @@
           <img class = 'img' id= 'aboutImg' src= 'img/skills2.jpg'>
           <img class = 'img' id= 'aboutImg' src= 'img/skills2.jpg'>
           <img class = 'img' id= 'aboutImg' src= 'img/skills2.jpg'>
-          <img class = 'img' id= 'aboutImg' src= 'img/skills2.jpg'>
-          <img class = 'img' id= 'aboutImg' src= 'img/skills2.jpg'>
-          <img class = 'img' id= 'aboutImg' src= 'img/skills2.jpg'>
         </img>
         <div class = 'mainContBox'>
           <h2>Skills</h2>
@@ -57,7 +54,6 @@
           <button onclick="myFunction()" class = 'myButton'>More</button>
         </div>
         <img>
-        <img class = 'img' id= 'skillImg' src= 'img/skills.png'>
         <img class = 'img' id= 'skillImg' src= 'img/skills.png'>
         <img class = 'img' id= 'skillImg' src= 'img/skills.png'>
         <img class = 'img' id= 'skillImg' src= 'img/skills.png'>
@@ -76,12 +72,34 @@
         <img class = 'img' id= 'nap' src= 'img/about.png'>
         <img class = 'img' id= 'nap' src= 'img/about.png'>
         <img class = 'img' id= 'nap' src= 'img/about.png'>
-        <img class = 'img' id= 'nap' src= 'img/about.png'>
-        <img class = 'img' id= 'nap' src= 'img/about.png'>
       </img>
         <div class = 'mainContBox'>
           <h2>Contact</h2>
           <p class = 'mcbDes'>Get in touch!</p>
+          <div class="container2">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">S-4 Base</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something :) .." style="height:100px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
           <button onclick="myFunction()" class = 'myButton'>Contact Medium</button>
         </div>
       </section>
