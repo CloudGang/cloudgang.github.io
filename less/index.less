@@ -1,0 +1,119 @@
+@mobile: ~"only screen and (max-width: 600px)";
+@red: red;
+
+.border-radius(@radius) {
+  border-top-right-radius: @radius;
+  border-top-left-radius: @radius;
+  border-bottom-left-radius: @radius;
+  border-bottom-right-radius: @radius;
+}
+div {
+  display: inline-block;
+  padding: 50px;
+  background: #820000;
+  background: -moz-linear-gradient(-45deg, #820000 0%, #1C6EA4 50%, #F0F0F0 100%);
+  background: -webkit-linear-gradient(-45deg, #820000 0%, #1C6EA4 50%, #F0F0F0 100%);
+  background: linear-gradient(135deg, #820000 0%, #1C6EA4 50%, #F0F0F0 100%);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  text-align: center;
+  font-family: 'Lato';
+}
+.mainCont {
+  background-color: white;
+}
+.mainContBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%%;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  -webkit-column-rule: 1px solid rgba(28,110,164,0.5);
+  -moz-column-rule: 1px solid rgba(28,110,164,0.5);
+  column-rule: 1px solid rgba(28,110,164,0.5);
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+  border: 5px outset #1C6EA4;
+}
+.navLink {
+  justify-content: space-between;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #ececec;
+  font-weight: 400;
+  text-decoration: underline solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+a:hover {
+  color: red;
+}
+.myButton {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.img {
+  display: inline-flex;
+  height: 100px;
+  position: initial;
+  left: 50%;
+  right: 50%;
+  justify-content: space-between;
+}
+#titleImg {
+  width: 100%;
+}
+@media (max-width: 750px) {
+  .img{
+    display: none;
+  }
+  #titleImg{
+    display: inline-flex;
+  }
+}
+.mainContBox:hover {
+  color: powderblue;
+}
+.myButton:hover {
+  color: red;
+}
